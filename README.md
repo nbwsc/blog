@@ -9,3 +9,5 @@
 * [synergy between ubuntu and OSX10.10](https://github.com/nbwsc/blog/blob/master/blogs/synergy between ubuntu and OSX10.10.md)-2016-3-9
 
 * [node编译器推荐](https://github.com/nbwsc/blog/blob/master/blogs/node编译器推荐.md)-2016-4-16
+
+* [git server 搭建](https://github.com/nbwsc/blog/blob/master/blogs/GitServer搭建.md)-2016-4-22
