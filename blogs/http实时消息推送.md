@@ -56,3 +56,21 @@ Comet是一个Web应用模型，它使用一个HTTP长连接，允许服务器�
 * 4）XMLHttpRequest
 * 5）XMLHttpRequest的长轮询
 * 6）脚本标签长轮询
+
+
+###
+
+|        |传统轮询	|长轮询	|服务器发送事件|	WebSocket|
+|---------|-----------|--------|-------------|---------|
+|浏览器支持	|几乎所有现代浏览器|	几乎所有现代浏览器|Firefox 6+ Chrome 6+ Safari 5+ Opera 10.1+	|IE 10+ Edge Firefox 4+ Chrome 4+ Safari 5+ Opera 11.5+|
+服务器负载	|较少的CPU资源，较多的内存资源和带宽资源	|与传统轮询相似，但是占用带宽较少	|与长轮询相似，除非每次发送请求后服务器不需要断开连接|	无需循环等待（长轮询），CPU和内存资源不以客户端数量衡量，而是以客户端事件数衡量。四种方式里性能最佳。|
+客户端负载	|占用较多的内存资源与请求数。|	与传统轮询相似。	|浏览器中原生实现，占用资源很小。	|同Server-Sent Event。|
+延迟	|非实时，延迟取决于请求间隔。|	同传统轮询。|	非实时，默认3秒延迟，延迟可自定义。|	实时。|
+实现复杂度|	非常简单。|	需要服务器配合，客户端实现非常简单。	|需要服务器配合，而客户端实现甚至比前两种更简单。|	需要Socket程序实现和额外端口，客户端实现简单。|
+
+
+
+### 参考
+* http://blog.zhangruipeng.me/2015/10/22/Web-Connectivity/
+* http://blog.csdn.net/chszs/article/details/46581179?locationNum=1&fps=1
+* [知乎好回答](https://www.zhihu.com/question/20215561/answer/40316953?utm_source=weibo&utm_medium=weibo_share&utm_content=share_answer&utm_campaign=share_button)
