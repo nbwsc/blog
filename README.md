@@ -10,6 +10,6 @@
 
 * [node编译器推荐](https://github.com/nbwsc/blog/blob/master/blogs/node编译器推荐.md)-2016-4-16
 
-* [git server 搭建](https://github.com/nbwsc/blog/blob/master/blogs/GitServer搭建.md)-2016-4-22
+* [gitserver搭建](https://github.com/nbwsc/blog/blob/master/blogs/GitServer搭建.md)-2016-4-22
 
 * [http实时消息推送](https://github.com/nbwsc/blog/blob/master/blogs/http实时消息推送.md)-2016-11-02
