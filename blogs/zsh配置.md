@@ -6,11 +6,14 @@
 轻量级的工具控，必须要知道zsh这个shell。
 
 ## 安装
+
 ### mac下安装
 mac下自带有zsh `/bin/zsh`
+
 ### linux下安装
 * 如果你用 Redhat Linux，执行：sudo yum install zsh
 * 如果你用 Ubuntu Linux，执行：sudo apt-get install zsh
+
 ### windows下安装 
 就看你用什么虚拟机了:simple_smile:
 
