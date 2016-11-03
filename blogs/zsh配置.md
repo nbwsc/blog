@@ -1,4 +1,4 @@
-# NODE IDE 
+# ZSH
 
 
 `zsh` `shell` 
