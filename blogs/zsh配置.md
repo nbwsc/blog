@@ -44,5 +44,21 @@ ZSH_THEME=”robbyrussell”
 plugins=(git textmate ruby autojump osx mvn gradle)
 ```
 
+
+##关于history
+如果是从bash切换到zsh后，history是不会共享的，也就是说`ctr+R`、`history`,或者`!cmd`都不起作用
+从bash_history到zsh_history 有很多方法，下面给出一个node版本的
+```javascript
+// $ node bash-history-to-zsh-history.js >> ~/.zsh_history
+
+var fs = require("fs");
+var a = fs.readFileSync(".bash_history");
+var time = Date.now();
+a.toString().split("\n").forEach(function(line){
+  console.log(": "+ (time++) + ":0;"+line);
+});
+```
+
 ## 参考
 * http://macshuo.com/?p=676
+* https://gist.github.com/ycarmel/9660351
