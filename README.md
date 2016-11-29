@@ -14,4 +14,6 @@
 
 * [http实时消息推送](https://github.com/nbwsc/blog/blob/master/blogs/http实时消息推送.md)-2016-11-02
 
+* [zsh配置](https://github.com/nbwsc/blog/blob/master/blogs/zsh配置.md)-2016-11-03
+
 * [Linux下查看文件stat到ln探究（附Linux下文件删除的原理）](https://github.com/nbwsc/blog/blob/master/blogs/Linux下查看文件stat到ln探究.md)-2016-11-29
