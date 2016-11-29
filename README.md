@@ -13,3 +13,5 @@
 * [gitserver搭建](https://github.com/nbwsc/blog/blob/master/blogs/GitServer搭建.md)-2016-4-22
 
 * [http实时消息推送](https://github.com/nbwsc/blog/blob/master/blogs/http实时消息推送.md)-2016-11-02
+
+* [Linux下查看文件stat到ln探究（附Linux下文件删除的原理）](https://github.com/nbwsc/blog/blob/master/blogs/Linux下查看文件stat到ln探究.md)-2016-11-29
