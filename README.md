@@ -20,3 +20,4 @@
 
 * [lisp初探](https://github.com/nbwsc/blog/blob/master/blogs/lisp初探.md)-2016-12-26
 
+* [Tips](https://github.com/nbwsc/blog/blob/master/blogs/Tips.md)-2017-01-11
