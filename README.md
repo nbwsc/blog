@@ -25,3 +25,5 @@
 * [lsof命令详解](https://github.com/nbwsc/blog/blob/master/blogs/lsof命令详解.md)-2017-01-11
 
 * [Mac-middle-mouse-click](https://github.com/nbwsc/blog/blob/master/blogs/Mac-middle-mouse-click.md)-2017-01-12
+
+* [关于工作的一点想法](https://github.com/nbwsc/blog/blob/master/blogs/关于工作的一点想法.md)-2017-03-01
