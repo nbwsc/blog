@@ -29,3 +29,5 @@
 * [关于工作的一点想法](https://github.com/nbwsc/blog/blob/master/blogs/关于工作的一点想法.md)-2017-03-01
 
 * [redis_note](https://github.com/nbwsc/blog/blob/master/blogs/redis_note.md)-2017-03-07
+
+* [ionic2_something](https://github.com/nbwsc/blog/blob/master/blogs/ionic2_something.md)-2017-03-27
