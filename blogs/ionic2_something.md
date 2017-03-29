@@ -11,3 +11,5 @@
 * 4.4 能打开,size变成近80M.且没有墨水动画;
 * 7.0 能打开,size变成90M+,且有墨水动画;
 
+### showWhen="core,android,windows"
+showWhen to check current device & you can select what you want to show in target devices
