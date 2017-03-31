@@ -13,3 +13,37 @@
 
 ### showWhen="core,android,windows"
 showWhen to check current device & you can select what you want to show in target devices
+
+
+### custom dirctinve(component)
+
+```bash
+ionic g directive $YOUR_COMPONENT
+```
+Modify src/app/app.module.ts to reflect the following:
+```typescript
+import { NgModule } from '@angular/core';
+import { IonicApp, IonicModule } from 'ionic-angular';
+import { MyApp } from './app.component';
+import { HomePage } from '../pages/home/home';
+import { YOUR_COMPONENT } from '../components/elastic-header/elastic-header';
+ 
+@NgModule({
+  declarations: [
+    MyApp,
+    HomePage,
+    YOUR_COMPONENT
+  ],
+  imports: [
+    IonicModule.forRoot(MyApp)
+  ],
+  bootstrap: [IonicApp],
+  entryComponents: [
+    MyApp,
+    HomePage
+  ],
+  providers: []
+})
+export class AppModule {}
+```
+then you can Create the Elastic Header Directive
