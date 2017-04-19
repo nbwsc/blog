@@ -47,3 +47,8 @@ import { YOUR_COMPONENT } from '../components/elastic-header/elastic-header';
 export class AppModule {}
 ```
 then you can Create the Elastic Header Directive
+
+
+
+### `ionic serve` eat my Mem and it's very slow ...
+

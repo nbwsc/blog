@@ -33,3 +33,5 @@
 * [ionic2_something](https://github.com/nbwsc/blog/blob/master/blogs/ionic2_something.md)-2017-03-27
 
 * [nodejs&iojs](https://github.com/nbwsc/blog/blob/master/blogs/nodejs&iojs.md)-2017-03-31
+
+* [redis-learing](https://github.com/nbwsc/blog/blob/master/blogs/redis-learing.md)-2017-04-19
