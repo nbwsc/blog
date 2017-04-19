@@ -28,6 +28,8 @@
 
 * [关于工作的一点想法](https://github.com/nbwsc/blog/blob/master/blogs/关于工作的一点想法.md)-2017-03-01
 
+* [ts-test](https://github.com/nbwsc/blog/blob/master/blogs/ts-test.md)-2017-03-26
+
 * [redis_note](https://github.com/nbwsc/blog/blob/master/blogs/redis_note.md)-2017-03-07
 
 * [ionic2_something](https://github.com/nbwsc/blog/blob/master/blogs/ionic2_something.md)-2017-03-27
@@ -35,3 +37,5 @@
 * [nodejs&iojs](https://github.com/nbwsc/blog/blob/master/blogs/nodejs&iojs.md)-2017-03-31
 
 * [redis-learing](https://github.com/nbwsc/blog/blob/master/blogs/redis-learing.md)-2017-04-19
+
+* [golang_learn](https://github.com/nbwsc/blog/blob/master/blogs/golang_learn.md)-2017-04-09
