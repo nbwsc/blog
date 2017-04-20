@@ -14,3 +14,8 @@ dont forget a space after `:`
 
 * tencent :theres no public ip you can config for your db ;
 you should change host to 0.0.0.0
+
+* remove all the links which not work 
+```
+find -L . -type l -delete
+```
