@@ -39,3 +39,5 @@
 * [redis-learing](https://github.com/nbwsc/blog/blob/master/blogs/redis-learing.md)-2017-04-19
 
 * [golang_learn](https://github.com/nbwsc/blog/blob/master/blogs/golang_learn.md)-2017-04-09
+
+* [Bali_Raiders](https://github.com/nbwsc/blog/blob/master/blogs/Bali_Raiders.md)-2017-04-30
