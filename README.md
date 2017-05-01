@@ -41,3 +41,5 @@
 * [golang_learn](https://github.com/nbwsc/blog/blob/master/blogs/golang_learn.md)-2017-04-09
 
 * [Bali_Raiders](https://github.com/nbwsc/blog/blob/master/blogs/Bali_Raiders.md)-2017-04-30
+
+* [too_many_open_files](https://github.com/nbwsc/blog/blob/master/blogs/too_many_open_files.md)-2017-05-01
