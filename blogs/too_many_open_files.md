@@ -8,7 +8,7 @@
 
     Tornado's HTTP server does not (as of version 3.2) close connections that a web browser has left open, so idle connections may accumulate over time. This is one reason why it is recommended to use a proxy like nginx or haproxy in front of a Tornado server; these servers are more hardened against this and other potential DoS issues.
 
-他说了两个方面，一个是系统的umilit里限制的单个进程文件打开数限制，我看了一下服务器的`ulimit -n`配置，已经设置成65535了，应该没有这个问题，我想是不是tornado的限制呢， 于是我把客户端直接连python端口改成了通过nginx做的反向代理。结果第一个坑出现了。
+他说了两个方面，一个是系统的umilit里限制的单个进程文件打开数限制，我看了一下服务器的`ulimit -n`配置，已经设置成65535了，应该没有这个问题,另一个是tornado会idle http链接,导致我想是不是tornado的限制呢， 于是我把客户端直接连python端口改成了通过nginx做的反向代理。结果第一个坑出现了。
 
 业务逻辑中需要用户的ip来进行登录状态的判断，通过nginx的代理过来的连接ip全变成了本地，然后就想办法怎么配nginx的ip透传过来。方法就是在代理头里面加入realip信息，好的，问题解决了？好像没那么简单。使用ngnix代理后tornado会对部分连接请求报错，具体原因没有深究，应该也是要从ngnix配置中做修改，但是在线用户的压力让我还是决定放弃使用ngnix，直面前面句柄耗尽的问题。
 
