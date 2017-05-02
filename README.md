@@ -6,7 +6,7 @@
 
 * [c/c++内存分配与内存对齐](https://github.com/nbwsc/blog/blob/master/blogs/c:c++内存分配与内存对齐.md)-2016-3-2
 
-* [synergy between ubuntu and OSX10.10](https://github.com/nbwsc/blog/blob/master/blogs/synergy between ubuntu and OSX10.10.md)-2016-3-9
+* [synergy between ubuntu and OSX10.10](https://github.com/nbwsc/blog/blob/master/blogs/synergy_between_ubuntu_and_OSX10.10.md)-2016-3-9
 
 * [node编译器推荐](https://github.com/nbwsc/blog/blob/master/blogs/node编译器推荐.md)-2016-4-16
 
