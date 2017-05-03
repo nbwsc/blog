@@ -43,3 +43,5 @@
 * [Bali_Raiders](https://github.com/nbwsc/blog/blob/master/blogs/Bali_Raiders.md)-2017-04-30
 
 * [too_many_open_files](https://github.com/nbwsc/blog/blob/master/blogs/too_many_open_files.md)-2017-05-01
+
+* [how_to_share_localStorage_in_different_orgin](https://github.com/nbwsc/blog/blob/master/blogs/how_to_share_localStorage_in_different_orgin.md)-2017-05-03
