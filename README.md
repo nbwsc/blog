@@ -45,3 +45,5 @@
 * [too_many_open_files](https://github.com/nbwsc/blog/blob/master/blogs/too_many_open_files.md)-2017-05-01
 
 * [how_to_share_localStorage_in_different_orgin](https://github.com/nbwsc/blog/blob/master/blogs/how_to_share_localStorage_in_different_orgin.md)-2017-05-03
+
+* [crosswalk_native_file_system_jsinterface](https://github.com/nbwsc/blog/blob/master/blogs/crosswalk_native_file_system_jsinterface.md)-2017-05-12
