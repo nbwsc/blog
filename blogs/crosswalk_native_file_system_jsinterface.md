@@ -47,5 +47,4 @@ TODO : ADD CODE HERE
 
 在最后几乎绝望的情况下，我想这个crosswalk有没有预留什么特殊的接口呢，于是正文开始了；
 
-我直接开着adb crosswalk的调试，在console里`console.dir(window`查看里面所有变量，发现有一个xwalk的全局变量
-
+我直接开着adb crosswalk的调试，在console里`console.dir(window`查看里面所有变量，发现有一个xwalk的全局变量.里面有一个
