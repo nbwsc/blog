@@ -36,8 +36,17 @@ talk is cheap ,show me the [code](https://github.com/nbwsc/blog/blob/master/blog
 
 方案1的话正常情况下是可以的，就是使用下载的方式，下载一个js生成内容的文件。可以这么弄：
 
-```
-TODO : ADD CODE HERE
+```html
+<a id="save" download="earth.txt" href="data:text/plain,mostly harmless&#10;" style="display:none"></a>
+<script>
+    function saveFile(contents, file_name, mime_type) {
+    var a = document.getElementById('save');
+    mime_type = mime_type || 'application/octet-stream'; // text/html, image/png, et c
+    if (file_name) a.setAttribute('download', file_name);
+    a.href = 'data:'+ mime_type +';base64,'+ btoa(contents || '');
+    a.click();
+    }
+</script>
 
 ```
 但是上面提到了某种盒子下是不能下载的。所以这个方案也不行。而原应用并没有提供任何原生读写的能力（我原以为没有，其实crosswalk封装了），似乎也走不通了。
@@ -47,4 +56,184 @@ TODO : ADD CODE HERE
 
 在最后几乎绝望的情况下，我想这个crosswalk有没有预留什么特殊的接口呢，于是正文开始了；
 
-我直接开着adb crosswalk的调试，在console里`console.dir(window`查看里面所有变量，发现有一个xwalk的全局变量.里面有一个
+我直接开着adb crosswalk的调试，在console里`console.dir(window`查看里面所有变量，发现有一个xwalk的全局变量.里面有一个`experimental`,然后里面有个`native_file_system`. 一惊,这不是我想要的么.`native_file_system`里有几个`_proto_`:`constructor`,`getRealPath`,`requestNativeFileSystem`.用了那么久的crosswalk竟然不知道crosswalk竟然自己封装了文件系统.那接下来就找找这个的api doc了.
+
+爆栈上找了一边 没有提这个的,github的issue和wiki上也没有详细用法说明.于是我就把源码clone下来分析.
+
+`grep`找`native_file_system`,找到一个html测试文件,开星!
+
+```javascript
+ <script>
+      var current_test = 0;
+      var test_list = [
+        getRealPath,
+        writeFile,
+        readFile,
+        removeFile,
+        createDirectory,
+        readDirectoryEntries,
+        removeDirectory,
+        endTest
+      ];
+
+      function runNextTest() {
+        if (current_test < test_list.length) {
+          test_list[current_test++]();
+        }
+      };
+
+      function reportFail(error) {
+        console.log(error);
+        document.title = "Fail";
+        document.body.innerText = "Fail";
+      };
+
+      function endTest() {
+        document.title = "Pass";
+        document.body.innerText = "Pass";
+      };
+
+      function getRealPath() {
+        var doesNotExist =
+            xwalk.experimental.native_file_system.getRealPath("invalid!");
+        if (doesNotExist !== "")
+          reportFail("getRealPath should have failed.");
+        else
+          runNextTest();
+
+        // Implementing a check for a valid path, which depends on the OS and
+        // user locale, is left as an exercise to the reader.
+      }
+
+      function writeFile() {
+        xwalk.experimental.native_file_system.requestNativeFileSystem("documents",
+          function(fs) {
+            fs.root.getFile("/documents/1.txt", {create: true}, function (entry) {
+              entry.createWriter(function (writer) {
+                var blob = new Blob(["1234567890"], {type: "text/plain"});
+                writer.write(blob);
+                runNextTest();
+              },
+              function(e) {reportFail(e)});
+            },
+          function(e) {reportFail(e)});
+        });
+      }
+
+      function readFile() {
+        xwalk.experimental.native_file_system.requestNativeFileSystem("documents",
+          function(fs) {
+            fs.root.getFile("/documents/1.txt", {create: false}, function (entry) {
+                entry.file(function(file) {
+                  reader = new FileReader();
+                  reader.onloadend = function(e) {
+                    if ("1234567890" == this.result) {
+                      runNextTest();
+                    } else {
+                      reportFail();
+                    }
+                  };
+                  reader.readAsText(file);
+                },
+                function(e) {reportFail(e)});
+            },
+            function(e) {reportFail(e)});
+        },
+        function(e) {reportFail(e)});
+      };
+
+
+      function removeFile() {
+        xwalk.experimental.native_file_system.requestNativeFileSystem("documents",
+            function(fs) {
+              fs.root.getFile("/documents/1.txt", {create: false}, function (entry) {
+                entry.remove(function () {
+                      runNextTest();
+                    },
+                    function(e) {reportFail(e)});
+              },
+              function(e) {reportFail(e)});
+            }
+        );
+      }
+
+      function createDirectory() {
+        xwalk.experimental.native_file_system.requestNativeFileSystem("documents",
+            function(fs) {
+              fs.root.getDirectory("/documents/justfortest", {create: true}, function (entry) {
+                runNextTest();
+              },
+              function(e) {reportFail(e)});
+            }
+        );
+      }
+
+      function readDirectoryEntries() {
+        xwalk.experimental.native_file_system.requestNativeFileSystem("documents",
+            function(fs) {
+              fs.root.getDirectory("/documents/", {create: false}, function (entry) {
+                var dirReader = entry.createReader();
+                var entries = [];
+                dirReader.readEntries(function(results) {
+                    if (0 < results.length) {
+                      runNextTest();
+                    } else {
+                      reportFail("You app home directory is empty!");
+                    }
+                  },
+                  function(e) {reportFail(e)}
+                );
+                runNextTest();
+              },
+              function(e) {reportFail(e)});
+            }
+        );
+      }
+
+      function removeDirectory() {
+        xwalk.experimental.native_file_system.requestNativeFileSystem("documents",
+            function(fs) {
+              fs.root.getDirectory("/documents/justfortest", {create: false}, function (entry) {
+                entry.remove(function () {runNextTest();},
+                    function(e) {reportFail(e)});
+              },
+              function(e) {reportFail(e)});
+            }
+        );
+      }
+
+      runNextTest();
+    </script>
+
+```
+
+直接把源码全贴出来,欣喜得拿出来在chrome debug里调试一下,结果跑不同,仔细一排查发现这个`documents`virtualPath在安卓里不存在.
+
+那怎莫办,再找找看,于是找到了第二个测试html,在`test/android/data/`下,内容类似但是virtualPath不同,是`cachedir`.
+
+`cache`分两部分,不知道这个`cachedir`指的是公共cache还是internal cache只能测试说话了.
+
+要测的是两个部分 1. 离线/重启保存；2. 不同包名应用共享
+
+结果发现既然是本地文件系统,1肯定是没问题,2确是私有的cache; 顿时心灰意冷,尝试了几个常用的vitrualpath,比如`download`,`sdcatd`,`/`也不成功.
+
+在要放弃之际,我觉得这个vitrualpath肯定定义在源码里,于是开始及找,终于找到一个java文件,里面定义了android的vitrualPath
+```java
+          String names[] = {
+            "ALARMS",
+            "DCIM",
+            "DOWNLOADS",
+            "MOVIES",
+            "MUSIC",
+            "NOTIFICATIONS",
+            "PICTURES",
+            "PODCASTS",
+            "RINGTONES"        
+            };
+```
+好了 随便选一个吧,都是在`sdcard`下的路径,注意有些阉割版安卓会没有其中某一个或几个,使用前请测试.
+
+另外一个,就是我发现他写入的封装是很底层的`blob`的方式,就是假如你要覆盖一个文件,你得先把它写成空,或者删了,再写入.否则,举个例子,
+如果你向写了`1234567890`的文件写入`321`,那么这个文件就变成`3214567890`了.要稍加注意.
+
+贴上[代码链接](https://github.com/nbwsc/blog/blob/master/blogs/xwalk_file.js),可以直接用
