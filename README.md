@@ -47,3 +47,5 @@
 * [how_to_share_localStorage_in_different_orgin](https://github.com/nbwsc/blog/blob/master/blogs/how_to_share_localStorage_in_different_orgin.md)-2017-05-03
 
 * [crosswalk_native_file_system_jsinterface](https://github.com/nbwsc/blog/blob/master/blogs/crosswalk_native_file_system_jsinterface.md)-2017-05-12
+
+* [awk_practice](https://github.com/nbwsc/blog/blob/master/blogs/awk_practice.md)-2017-05-23
