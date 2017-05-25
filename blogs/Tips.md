@@ -40,3 +40,6 @@ find -L . -type l -delete
     If making mobile apps, (tap) might be better. This is because when using (click) the action always executes, even when tapping accidently. The (tap) won't execute if the user holds it for a longer period. And if you want to have a button that needs to be clicked for a longer period of time you can use the (press).
 
     Note that, as user pointed out, some ionic versions have a bug where the (click) action is not activated on iOS
+
+* sublime mac os 下默认不会find the selected text
+	只要在perferences中添加`"find_selected_text": true`
