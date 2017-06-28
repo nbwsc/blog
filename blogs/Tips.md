@@ -43,3 +43,4 @@ find -L . -type l -delete
 
 * sublime mac os 下默认不会find the selected text
 	只要在perferences中添加`"find_selected_text": true`
+    command + g can replace 
