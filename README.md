@@ -49,3 +49,7 @@
 * [crosswalk_native_file_system_jsinterface](https://github.com/nbwsc/blog/blob/master/blogs/crosswalk_native_file_system_jsinterface.md)-2017-05-12
 
 * [awk_practice](https://github.com/nbwsc/blog/blob/master/blogs/awk_practice.md)-2017-05-23
+
+* [python_something](https://github.com/nbwsc/blog/blob/master/blogs/python_something.md)-2017-06-26
+
+* [wxrobot](https://github.com/nbwsc/blog/blob/master/blogs/wxrobot.md)-2017-06-28
