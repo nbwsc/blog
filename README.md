@@ -53,3 +53,5 @@
 * [python_something](https://github.com/nbwsc/blog/blob/master/blogs/python_something.md)-2017-06-26
 
 * [wxrobot](https://github.com/nbwsc/blog/blob/master/blogs/wxrobot.md)-2017-06-28
+
+* [Mongodb优化](https://github.com/nbwsc/blog/blob/master/blogs/Mongodb优化.md)-2017-07-08
