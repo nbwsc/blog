@@ -43,4 +43,13 @@ find -L . -type l -delete
 
 * sublime mac os 下默认不会find the selected text
 	只要在perferences中添加`"find_selected_text": true`
-    command + g can replace 
+	
+
+* ionic2 angular develop 
+
+
+* install chrome in linux server
+```
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+dpkg -i google-chrome-stable_current_amd64.deb
+```
