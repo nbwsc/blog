@@ -47,9 +47,17 @@ find -L . -type l -delete
 
 * ionic2 angular develop 
 
+* install chrome in server
 
-* install chrome in linux server
 ```
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 dpkg -i google-chrome-stable_current_amd64.deb
+apt-get -f install
+#需要server支持中文utf-8
+sudo apt-get install language-pack-zh-hant language-pack-zh-hans
+sudo vim /etc/environment
+#LANG="zh_CN.UTF-8"
+#LANGUAGE="zh_CN:zh:en_US:en"
+#中文字显示方块，需要安装字体
+sudo apt-get install fonts-droid ttf-wqy-zenhei ttf-wqy-microhei fonts-arphic-ukai fonts-arphic-uming
 ```
