@@ -57,3 +57,5 @@
 * [Mongodb优化](https://github.com/nbwsc/blog/blob/master/blogs/Mongodb优化.md)-2017-07-08
 
 * [微信支付相关的坑](https://github.com/nbwsc/blog/blob/master/blogs/微信支付相关的坑.md)-2017-07-08
+
+* [工程结构如何优化](https://github.com/nbwsc/blog/blob/master/blogs/工程结构如何优化.md)-2017-07-17
