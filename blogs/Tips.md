@@ -61,3 +61,8 @@ sudo vim /etc/environment
 #中文字显示方块，需要安装字体
 sudo apt-get install fonts-droid ttf-wqy-zenhei ttf-wqy-microhei fonts-arphic-ukai fonts-arphic-uming
 ```
+
+* Vue 中method this不是指向component的原因：不能用箭头函数
+```
+注意，不应该使用箭头函数来定义 method 函数 (例如 plus: () => this.a++)。理由是箭头函数绑定了父级作用域的上下文，所以 this 将不会按照期望指向 Vue 实例，this.a 将是 undefined。
+```
