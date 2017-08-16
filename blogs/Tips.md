@@ -66,3 +66,15 @@ sudo apt-get install fonts-droid ttf-wqy-zenhei ttf-wqy-microhei fonts-arphic-uk
 ```
 注意，不应该使用箭头函数来定义 method 函数 (例如 plus: () => this.a++)。理由是箭头函数绑定了父级作用域的上下文，所以 this 将不会按照期望指向 Vue 实例，this.a 将是 undefined。
 ```
+
+
+* python 打包windows可执行exe文件时候使用pyinstaller和apschedule会遇到问题
+[这个文章](http://www.cnblogs.com/ginponson/p/6079928.html)遇到的问题我都遇到了，按照他的做法能够解决
+
+* python 3.6不被pyinstaller支持，换成pythong3.5，
+
+* 结果python3.5不被vista以下版本windows支持，
+
+    所以最后只能选用python3.4
+    请不要和我说python2.
+    用python2不是和用xp一样么
