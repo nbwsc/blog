@@ -76,5 +76,7 @@ sudo apt-get install fonts-droid ttf-wqy-zenhei ttf-wqy-microhei fonts-arphic-uk
 * 结果python3.5不被vista以下版本windows支持，
 
     所以最后只能选用python3.4
-    请不要和我说python2.
+    请不要和我说python2
     用python2不是和用xp一样么
+
+* angular 1.x get Scope outside app(inject js) [blog](https://stackoverflow.com/questions/24595460/how-to-access-update-rootscope-from-outside-angular)
