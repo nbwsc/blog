@@ -63,3 +63,5 @@
 * [tensorflow_something](https://github.com/nbwsc/blog/blob/master/blogs/tensorflow_something.md)-2017-07-30
 
 * [0822](https://github.com/nbwsc/blog/blob/master/blogs/0822.md)-2017-08-22
+
+* [删除根目录以后](https://github.com/nbwsc/blog/blob/master/blogs/删除根目录以后.md)-2017-09-13
