@@ -65,3 +65,5 @@
 * [0822](https://github.com/nbwsc/blog/blob/master/blogs/0822.md)-2017-08-22
 
 * [删除根目录以后](https://github.com/nbwsc/blog/blob/master/blogs/删除根目录以后.md)-2017-09-13
+
+* [写写「缝纫机乐队」](https://github.com/nbwsc/blog/blob/master/blogs/写写「缝纫机乐队」.md)-2017-10-10
