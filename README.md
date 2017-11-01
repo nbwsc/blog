@@ -71,3 +71,5 @@
 * [1020](https://github.com/nbwsc/blog/blob/master/blogs/1020.md)-2017-10-20
 
 * [deploy-redis](https://github.com/nbwsc/blog/blob/master/blogs/deploy-redis.md)-2017-11-01
+
+* [how_to_start_mongodb](https://github.com/nbwsc/blog/blob/master/blogs/how_to_start_mongodb.md)-2017-10-28
