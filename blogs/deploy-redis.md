@@ -18,7 +18,7 @@ sudo cp src/redis-cli /usr/local/bin/
 ```
 or `sudo make install`
 
-### deploy propty
+### deploy properly
 - Create a directory where to store your Redis config files and your data:
 
 ```
