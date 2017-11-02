@@ -1,4 +1,4 @@
-#Linux下查看文件stat到ln探究
+# Linux下查看文件stat到ln探究
 
 `Linux` `file_system` `stat` `ln`
 
