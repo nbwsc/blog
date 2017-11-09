@@ -85,3 +85,13 @@ sudo apt-get install fonts-droid ttf-wqy-zenhei ttf-wqy-microhei fonts-arphic-uk
 ```
 dconf write /org/compiz/profiles/unity/plugins/unityshell/show-launcher "'Disabled'"
 ```
+
+
+
+* android 
+```
+Error:Error converting bytecode to dex:
+Cause: com.android.dex.DexException: Multiple dex files define Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
+```
+在gradle文件中改，只需要将compile改成provided就行。
+如果直接配置的话，也是一样的，在下拉框中选择provided。这里说明下，你只要改其中一个项目就可以了。
