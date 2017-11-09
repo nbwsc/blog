@@ -80,3 +80,8 @@ sudo apt-get install fonts-droid ttf-wqy-zenhei ttf-wqy-microhei fonts-arphic-uk
     用python2不是和用xp一样么
 
 * angular 1.x get Scope outside app(inject js) [blog](https://stackoverflow.com/questions/24595460/how-to-access-update-rootscope-from-outside-angular)
+
+* ubuntu disable `super` key to open dash home
+```
+dconf write /org/compiz/profiles/unity/plugins/unityshell/show-launcher "'Disabled'"
+```
