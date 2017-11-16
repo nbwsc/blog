@@ -75,3 +75,5 @@
 * [how_to_start_mongodb](https://github.com/nbwsc/blog/blob/master/blogs/how_to_start_mongodb.md)-2017-10-28
 
 * [gradle入门](https://github.com/nbwsc/blog/blob/master/blogs/gradle入门.md)-2017-11-08
+
+* [我对江歌案的一些看法](https://github.com/nbwsc/blog/blob/master/blogs/我对江歌案的一些看法.md)-2017-11-16
