@@ -95,3 +95,17 @@ Cause: com.android.dex.DexException: Multiple dex files define Landroid/support/
 ```
 在gradle文件中改，只需要将compile改成provided就行。
 如果直接配置的话，也是一样的，在下拉框中选择provided。这里说明下，你只要改其中一个项目就可以了。
+
+
+* wifi adb的两个方式：
+
+    - 无需root：
+    ```bash
+    adb devices #先用usb连接电脑并确认连接上adb
+    adb tcpip 5555 # 开启tcpip模式 并选择端口
+    # 然后就可以断开usb
+    adb connect 172.16.11.39:5555 # 连接同局域网下ip+端口
+    # 然后就可以adb shell / adb install /adb logcat /adb everythind了
+    ```
+    - 需要root：
+    在root的安卓设备上安装`wifi adb`然后打开，直接`adb connect`就可以
