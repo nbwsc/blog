@@ -54,7 +54,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 dpkg -i google-chrome-stable_current_amd64.deb
 apt-get -f install
 #需要server支持中文utf-8
-sudo apt-get install language-pack-zh-hant language-pack-zh-hans
+sudo apt-get install language-pack-zh-hant language-pack-zh-hans # key operation
 sudo vim /etc/environment
 #LANG="zh_CN.UTF-8"
 #LANGUAGE="zh_CN:zh:en_US:en"
