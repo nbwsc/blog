@@ -77,3 +77,5 @@
 * [gradle入门](https://github.com/nbwsc/blog/blob/master/blogs/gradle入门.md)-2017-11-08
 
 * [我对江歌案的一些看法](https://github.com/nbwsc/blog/blob/master/blogs/我对江歌案的一些看法.md)-2017-11-16
+
+* [红黄蓝事件的一点看法](https://github.com/nbwsc/blog/blob/master/blogs/红黄蓝事件的一点看法.md)-2017-11-30
