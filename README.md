@@ -81,3 +81,5 @@
 * [我对江歌案的一些看法](https://github.com/nbwsc/blog/blob/master/blogs/我对江歌案的一些看法.md)-2017-11-16
 
 * [红黄蓝事件的一点看法](https://github.com/nbwsc/blog/blob/master/blogs/红黄蓝事件的一点看法.md)-2017-11-30
+
+* [adb安装出现[INSTALL_FAILED_VERIFICATION_FAILURE]](https://github.com/nbwsc/blog/blob/master/blogs/adb安装出现[INSTALL_FAILED_VERIFICATION_FAILURE].md)-2017-12-26
