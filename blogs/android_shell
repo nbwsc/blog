@@ -1,0 +1,34 @@
+# download
+curl 'http://doyeecai.oss-cn-beijing.aliyuncs.com/caipiao-w-fangche.apk' > /data/local/tmp/caipiao.apk
+
+# install 
+pm install -rd /data/local/tmp/caipiao.apk
+
+# start app activity
+am start -n "com.doyee.newzst/com.doyee.newzst.MainActivity"
+
+
+
+js update 
+
+mainactivity.update('http://doyeecai.oss-cn-beijing.aliyuncs.com/caipiao-w-fangche.apk','caipiao2.apk','hello world','newzst')
+
+explain
+mainactivity.update(
+'http://doyeecai.oss-cn-beijing.aliyuncs.com/caipiao-w-fangche.apk',//target url 
+'caipiao2.apk',//filename
+'hello world',//description
+'newzst'//app name 
+)
+
+
+
+doyeezst localstorage
+
+cat /data/data/com.doyee.doyeezst/app_xwalkcore/Default/Local\ Storage/http_doyeecai.oss-cn-beijing.aliyuncs.com_0.localstorage
+
+sudo tcpdump -i wlan0 dst port 3000 -e -Atttt
+
+
+/data/data/com.doyee.newzst/shared_prefs/com.doyee.newzst_preferences.xml
+android shared file 
