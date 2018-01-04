@@ -265,3 +265,9 @@ func main() {
 }
 ```
 ```
+
+
+* http request 后返回body为二进制乱码，github.com/mozillazg/request 这个库默认在 request 的Header 中加入了
+`Content-Encoding:[gzip]`
+所以返回的body不是text/html,而是一个压缩过的二进制。所以request.html 中是乱码。
+设置头`"Accept-Encoding": ""`即可,
