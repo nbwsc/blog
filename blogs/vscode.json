@@ -1,0 +1,28 @@
+{
+    "files.autoSave": "onFocusChange",
+    "window.zoomLevel": 0,
+    "workbench.welcome.enabled": false,
+    "editor.minimap.enabled": true,
+    "typescript.check.tscVersion": false,
+    "git.enableSmartCommit": true,
+    "workbench.colorTheme": "Solarized Light",
+    "workbench.iconTheme": "vscode-icons",
+    // "[javascript]": {},
+    "editor.formatOnSave": true,
+    "prettier.tabWidth": 4,
+    "terminal.integrated.shellArgs.osx": [],
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    },
+    "explorer.confirmDelete": false,
+    "terminal.external.osxExec": "iTerm.app",
+    "gitlens.keymap": "alternate",
+}
