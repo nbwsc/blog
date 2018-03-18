@@ -114,5 +114,5 @@ Cause: com.android.dex.DexException: Multiple dex files define Landroid/support/
 
 * 小心cordova8.0.0
 
-* go [跨平台编译](CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build server.go)
+* go [跨平台编译](https://www.jisec.com/application-development/753.html)
 	mac build linux arm64:`CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build server.go`
