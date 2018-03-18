@@ -113,3 +113,6 @@ Cause: com.android.dex.DexException: Multiple dex files define Landroid/support/
 * vue和cordova使用的时候，需要注意cordova当前版本(7.1.0)不适配java9，vue的dev环境和build环境设置需要一样，另外cordova最好打包crosswalk，否则会出现不兼容白屏等问题。
 
 * 小心cordova8.0.0
+
+* go [跨平台编译](CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build server.go)
+	mac build linux arm64:`CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build server.go`
