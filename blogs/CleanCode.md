@@ -33,3 +33,46 @@
 ### 横向格式
 - 宽度小于120。
 - 赋值（等）操作符周围加上空格以达到强调的目的。
+- 在一些短小的if、while语句尽量加上缩进。
+- 尽量少使用空范围（while或者for的语句体为空），如果一定要使用，那么把分号放在另一行。
+
+## 对象和数据结构
+
+### 数据抽象
+- 不要乱加取值器、赋值器（getter，setter），尽量以抽象形态表达数据，不要暴露数据细节，使用户无需了解数据的实现就能操作数据本体。举例：
+```Java
+// 具象机动车
+public interface Vehicle {
+    double getFuelTankCapacityInGallons();
+    double getGallonsOfGasoline();
+}
+
+// 抽象机动车
+public interface Vehicle {
+    double getPercentFuelRemaining();
+}
+```
+
+### 数据和对象的反对称性
+- 过程式代码（使用数据结构的代码，ps我认为就是不在数据结构中定义方法）便于在不改动既有数据结构的前提下添加新函数；面向对象代码便于在不改动既有函数的前提下添加新类。
+
+### The Low of Demeter
+- 模块不应了解它所操作`对象`的内部情形。对象不应该通过存取器直接暴露其内部结构。
+- 比如，类C的方法f只应该调用以下对象的方法：
+    - C；
+    - 由f创建的对象；
+    - 作为参数传递给f的对象；
+    - 由C的实体变量持有的对象。
+- 火车失事：
+    ```Java
+        // 火车失事：连串的调用
+        final String outputDir = ctxt.getOptions().getScratchDir().getAbsolutePath();
+
+        // 应该切分
+        Options opts = ctxt.getOptions();
+        File scratchDir = opts.getScratchDir();
+        final String outputDir = scratchDir.getAbsolutePath();
+
+        // 当然最好应该封装在ctxt对象来做所有事
+        BufferOutputStream bos = ctxt.createScratchFileStream(classFileName);
+    ```
