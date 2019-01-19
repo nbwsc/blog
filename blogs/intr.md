@@ -12,7 +12,7 @@
 
 - `2011-2015`
   - 学校：中国地质大学（北京）
-  - 专业：电子信息工程专业
+  - 专业：电子信息工程
   - 学历：本科
 
 > #### 技能介绍
@@ -26,7 +26,7 @@
 
 - 后端：
 
-  - 精通 `Node.js`，了解 `Python` 和 `Golang`；
+  - 精通 `Node.js`，熟悉 `Python`、`Java` 和 `Golang`；
   - 熟悉 `Express` 和 `Koa`，熟悉 `Django` 和 `Tornado`；
   - 熟悉 `MongoDB` 和 `Redis` 等数据库，了解 `MySQL`；
   - 熟悉 `HTTP`、`TCP/IP` 等传输协议，了解常用 rpc 框架；
