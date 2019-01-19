@@ -22,7 +22,7 @@
   - 熟悉 `JavaScript`、`TypeScript`，熟练掌握 `CSS`，`HTML`，`DOM`；
   - 熟悉面向对象开发和函数式编程，熟悉 `MVC` 架构；
   - 熟悉 `Vue`、`Angular（ 1 & 2 ）`，了解 `React`；
-  - 熟悉 `Cordova`、`Ionic` 等混合应用的跨平台方案，熟悉 `Weex`、`React Native` 等原生脚本的跨平台方案；
+  - 熟悉 `Cordova`、`Ionic` 等混合应用和 `Weex`、`React Native` 等原生脚本的跨平台方案；
 
 - 后端：
 
