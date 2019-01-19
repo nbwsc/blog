@@ -35,7 +35,7 @@
 
 * 其他：
 
-  - 对 `Node.js` 的异步控制有深刻的理解（ `Promise`、`Generator`、`async/await`，和 es2018 中的 `for await...of` ），对 `ECMAScript` 新特性充满热情；
+  - 对 `Node.js` 的异步控制有深刻的理解（ `Promise`、`Generator`、`async/await`，和 ES2018 中的 `for await...of` ），对 `ECMAScript` 新特性充满热情；
   - 熟悉 `Linux` / `Unix` 开发环境；
   - 熟练使用 `Git`；
   - 熟悉 DevOps，使用 `Jenkins` 等常见 CI / CD 工具进行持续集成和交付；

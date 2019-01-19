@@ -2,7 +2,7 @@
 
 > #### 个人简介
 
-王世超，男，出生于 1992 年 4 月，联系方式：`166 1991 0574`  
+王世超，男，出生于 1992 年 4 月，联系方式：<strong>`166 1991 0574`</strong>  
 邮箱：`nbwsc@icloud.com`，GitHub：`https://github.com/nbwsc`。  
 2015 年于中国地质大学（北京）电子信息工程系取得学士学位。  
 
@@ -26,7 +26,7 @@
 
 - 其他：
 
-    - 对 `Node.js` 的异步控制有深刻的理解（ `Promise`、`Generator`、`async/await`，和 es2018 中的 `for await...of` ），对 `ECMAScript` 新特性充满热情；
+    - 对 `Node.js` 的异步控制有深刻的理解（ `Promise`、`Generator`、`async/await`，和 ES2018 中的 `for await...of` ），对 `ECMAScript` 新特性充满热情；
     - 熟悉 `Linux` / `Unix` 开发环境；
     - 熟练使用 `Git`；
     - 熟悉 DevOps，使用 `Jenkins` 等常见 CI / CD 工具进行持续集成和交付；
@@ -110,6 +110,13 @@
         2. 服务器搭建，业务实现
         3. 管理系统实现
     - 技术关键词：`Angular` `Cordova` `Koa`
+
+7. 其他项目：
+    - 「神经动物园」小游戏
+    - 「推磨」公众号开发
+    - 微信群自动管理工具
+    - 基于 LSTM 对足彩结果的预测模型
+    - 在 Android 建立基于 MQTT 协议的局域网 AP
 
 > #### 自我评价
 
