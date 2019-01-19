@@ -4,7 +4,7 @@
 
 - 性别：男
 - 出生日期：1992.04
-- 联系方式：`16619910574`
+- 联系方式：`166 1991 0574`
 - 邮箱：`nbwsc@icloud.com`
 - GitHub：`https://github.com/nbwsc`
 
@@ -19,10 +19,11 @@
 
 - 前端：
 
-  - 熟悉 `JavaScript`、`TypeScript`，熟练掌握 `CSS`，`HTML`，`DOM`；
+  - 熟悉 `JavaScript`、`TypeScript`，熟练掌握 `CSS`，`HTML`，`DOM` 等前端基础；
   - 熟悉面向对象开发和函数式编程，熟悉 `MVC` 架构；
   - 熟悉 `Vue`、`Angular（ 1 & 2 ）`，了解 `React`；
   - 熟悉 `Cordova`、`Ionic` 等混合应用和 `Weex`、`React Native` 等原生脚本的跨平台方案；
+  - 熟悉小程序、小游戏开发，熟练使用 `LayaAir` 游戏引擎进行开发；
 
 - 后端：
 
