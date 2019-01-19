@@ -130,6 +130,8 @@ li {
 }
 p {
     font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 4px;
 }
 h4 {
     margin-top: 6px;
