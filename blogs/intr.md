@@ -122,3 +122,21 @@
 
 - 热爱技术，学习能力强；
 - 为人和善，乐于分享和合作；
+
+<style>
+li { 
+    font-size: 12px; 
+}
+p {
+    font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+h4 {
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+code {
+    font-size: 11px;
+}
+</style>
