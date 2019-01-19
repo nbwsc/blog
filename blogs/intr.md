@@ -22,14 +22,14 @@
   - 熟悉 `JavaScript`、`TypeScript`，熟练掌握 `CSS`，`HTML`，`DOM`；
   - 熟悉面向对象开发和函数式编程，熟悉 `MVC` 架构；
   - 熟悉 `Vue`、`Angular（ 1 & 2 ）`，了解 `React`；
-  - 熟悉 `Cordova`，`Ionic` 等混合应用的跨平台方案，熟悉 `Weex`，`React Native` 等原生脚本的跨平台方案；
+  - 熟悉 `Cordova`、`Ionic` 等混合应用的跨平台方案，熟悉 `Weex`、`React Native` 等原生脚本的跨平台方案；
 
 - 后端：
 
   - 精通 `Node.js`，熟悉 `Python`、`Java` 和 `Golang`；
   - 熟悉 `Express` 和 `Koa`，熟悉 `Django` 和 `Tornado`；
-  - 熟悉 `MongoDB` 和 `Redis` 等数据库，了解 `MySQL`；
-  - 熟悉 `HTTP`、`TCP/IP` 等传输协议，了解常用 rpc 框架；
+  - 熟悉 `MongoDB`、`Redis` 等数据库，了解 `MySQL`；
+  - 熟悉 HTTP、TCP/IP 等协议，了解常用 RPC 框架；
   - 熟悉 `Ngnix` 的配置和使用；
 
 * 其他：
@@ -122,4 +122,3 @@
 
 - 热爱技术，学习能力强；
 - 为人和善，乐于分享和合作；
-
